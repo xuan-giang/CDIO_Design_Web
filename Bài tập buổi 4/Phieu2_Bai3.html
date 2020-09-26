@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bài 3 - Phiếu 2</title>
+	<style>
+		body{
+    background-color: #facfcf;
+}
+.menubar{
+    height: 50px;
+    width: max-content;
+    background-color: blue;
+    display: flex;
+    line-height: 50px;
+    position: relative;
+}
+.option{
+    color:white;
+    width: 150px;
+    text-align:center ;
+    border-right:0.2px solid #facfcf ;
+}
+.option:hover{
+    background-color: red;
+    color:white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.option > .more{
+    display: none;
+    position: absolute;
+}
+.option:hover .more{
+    display: flex;
+    width: max-content;
+    background-color: red;
+}
+.option-more{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right:0.1px solid #facfcf;
+    border-top: 0.1px solid #facfcf;
+}
+.option-more:hover{
+    display: flex;
+    width: max-content;
+    background-color: blue;
+}
+	</style>
+</head>
+
+<body>
+	<div class="menubar">
+        <div class="option">Chính Trị - Xã Hội</div>
+        <div class="option">Thế Giới
+           <div class="more">
+                <div class="option-more">Thư Viện Pháp Luật</div>
+                <div class="option-more">Sống Khỏe</div>
+                <div class="option-more">Pháp Luật</div>
+           </div>
+        </div>
+        <div class="option">Nhịp Sống Trẻ</div>
+        <div class="option">Giáo Dục</div>
+        <div class="option">Kinh Tế</div>
+     </div>
+</body>
+</html>

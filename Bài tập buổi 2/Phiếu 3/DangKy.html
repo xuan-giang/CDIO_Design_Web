@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Phiếu 3</title>
+<style>
+	
+	form{
+		background-color: #C3EEC7;
+		color: #3B851E;
+		font-weight: bold;
+	}
+	</style>	
+</head>
+
+<body>
+<form>	
+<table border="1" align="center" width="500px" height="300px">
+  <h2 align="center">Phiếu đăng ký tham gia chương trình khuyến mãi </h2>
+  <tr>
+    <td>Họ và tên</td>
+    <td><input type="text" name="username" placeholder="Nhập họ và tên" size="40"></td>
+  </tr>
+  <tr>
+    <td>Địa chỉ</td>
+    <td><input type="text" name="address" placeholder="Nhập địa chỉ" size="40"></td>
+  </tr>
+  <tr>
+    <td>Số điện thoại</td>
+    <td><input type="number" name="phonenumber" placeholder="Nhập số điện thoại" size="40"></td>
+  </tr>
+  <tr>
+    <td> Giới tính </td>
+    <td><label>
+        <input type="radio" name="gender" id="nam">
+        Nam </label>
+      <label>
+        <input type="radio" name="gender" id="nu">
+        Nữ </label></td>
+  </tr>
+  <tr>
+    <td> Nghề nghiệp </td>
+    <td><select name="job" >
+        <option value="giaovien">Giáo viên</option>
+        <option value="bodoi">Bộ đội</option>
+        <option value="bacsi">Bác sĩ</option>
+        <option value="lamruong">Làm ruộng</option>
+        <option value="kysu">Kỹ sư</option>
+      </select></td>
+  </tr>
+  <tr>
+    <td> Chọn sản phẩm tham gia </td>
+    <td><select multiple name="product" size="4">
+        <option value="kemdanhrang">Kem đánh răng</option>
+        <option value="botgiat">Bột giặt</option>
+        <option value="daugoidau">Dầu gội đầu</option>
+        <option value="suatam">Sữa tắm</option>
+      </select></td>
+  </tr>
+  <tr>
+    <td> Số người dựa đoán tham gia </td>
+    <td><input type="text" name="numPeolpe" size="15"></td>
+  </tr>
+<tr>
+	<td colspan="2" align="center">
+	<input type="submit" name="Đồng ý" value=" Đồng ý ">
+	</td>
+	</tr>	
+</table>
+	</form>
+</body>
+</html>
