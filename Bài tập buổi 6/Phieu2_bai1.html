@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Nguyễn Xuân Giang">	
+<title>Phieu2_bai1</title>
+	<style>
+		.{
+		padding: 15px;
+			margin: 8px;
+			background-color: #DFE9A5;
+		}
+	</style>
+<script language="JavaScript">
+function giai(form){
+var x1,x2;
+var x,y,z,delta;
+x= parseInt(form.a.value);
+y= parseInt(form.b.value);
+z= parseInt(form.c.value);
+delta=(y*y-4*x*z)
+if(delta ==0){
+ alert("Phương trình có nghiệm kép");
+ x1=-y/(2*x) ;
+ x2=-y/(2*x);
+ form.x.value=eval(x1);
+ form.y.value=eval(x2);
+}
+else if(delta<0){
+ alert("Phương trình vô nghiệm");
+} 
+else{
+ alert("Phương trình có 2 nghiệm phân biệt");
+ x1=(-y-Math.sqrt(delta))/(2*x);
+ x2=(-y+Math.sqrt(delta))/(2*x);
+ form.x.value=eval(x1);
+ form.y.value=eval(x2);
+}
+}
+</script>
+</head>
+
+<body style="background-color: #DFE9A5;">
+<form method="post">
+  <center>
+    <p><br>
+    </p>
+    <h1>Giải phương trình bậc 2</h1>
+    <p>&nbsp;</p>
+    <p>Nhập hệ số a:
+      <input type="text" name="a" value="">
+    </p>
+    <p><br>
+      Nhập hệ số b:
+      <input type="text" name="b" value="">
+    </p>
+    <p><br>
+      Nhập hệ số c:
+      <input type="text" name="c" value="">
+    </p>
+    <p><br>
+      <input type="button" value="Answer" onClick="giai(this.form)">
+    </p>
+    <p><br>
+      Kết quả:
+      <input type="text" name="x" value="">
+      <input type="text" name="y" value="">
+    </p>
+    
+  </center>
+</form>
+</body>
+</html>

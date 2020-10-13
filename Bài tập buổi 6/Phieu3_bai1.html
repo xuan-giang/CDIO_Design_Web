@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Nguyễn Xuân Giang">	
+<title>Phieu2_bai1</title>
+	<style>
+		.{
+		    padding: 15px;
+			margin: 8px;
+			background-color: #DFE9A5;
+		}
+		.box{
+			float: left;
+			margin: 5px auto;
+			padding: 5px auto;
+		}
+		.box1{
+			width: 250px;
+			border: 0px solid #CD00EB;
+		}
+		.box2{
+			width: 250px;
+			border: 0px solid #CD00EB;
+		}
+	</style>
+<script language="JavaScript">
+function giai(form){
+var A1,B1,C1,A2,B2,C3,D,Dx,Dy,X,Y;
+A1= parseInt(form.a1.value);
+B1= parseInt(form.b1.value);
+C1= parseInt(form.c1.value);
+A2= parseInt(form.a2.value);
+B2= parseInt(form.b2.value);
+C2= parseInt(form.c2.value);	
+
+	D = A1 * B2 - A2 * B1;
+    Dx = C1 * B2 - C2 * B1;
+    Dy = A1 * C2 - A2 * C1;
+    if (D == 0) {
+        if (Dx + Dy == 0)
+            alert("Hệ phương trình có vô số nghiệm");
+        else
+            alert("Hệ phương trình vô nghiệm");
+    }
+    else {
+        X = Dx / D;
+        Y = Dy / D;
+        alert("Hệ phương trình có nghiệm");
+		form.x.value=eval(X);
+ 		form.y.value=eval(Y);
+    }
+}
+</script>
+</head>
+
+<body style="background-color: #A5E8E9;">
+<form method="post">
+  
+    <p><br>
+    </p>
+    <h1 align="center">Giải hệ phương trình bậc nhất 2 ẩn</h1>
+			<p>&nbsp;</p>
+  <div class="box box1">
+			<p class="heSo"><strong>a1</strong>:
+<input type="text" name="a1" value="">
+			</p>
+			<p class="heSo"><strong>b1</strong>:
+<input type="text" name="b1" value="">
+			</p>
+			<p class="heSo"><strong>c1:</strong>
+			  <input type="text" name="c1" value="">
+			</p>
+		</div>
+  <div class="box box2">
+			<p class="heSo"><strong>a2:</strong>
+			  <input type="text" name="a2" value="">
+			</p>
+			<p class="heSo"><strong>b2:</strong>
+			  <input type="text" name="b2" value="">
+			</p>
+			<p class="heSo"><strong>c2:</strong>
+			  <input type="text" name="c2" value="">
+			</p>
+		</div>
+		<p><br><br>
+			<input type="button" value="Answer" onClick="giai(this.form)">
+		</p>
+		<p><br>
+		  <b>Kết quả: </b>
+			<input type="text" name="x" value="">
+			<input type="text" name="y" value="">
+		</p>
+    
+
+</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head> 
+<meta charset="utf-8" author="Nguyễn Xuân Giang">
+<title>Phieu1_Bai1</title>
+	<style type="text/css">
+		*{
+			margin: 2px auto;
+			padding: 0px;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<script>
+		function myFunction(){
+			var TuoiDuong = document.getElementById("TuoiDuongLich").value;
+			var i = (2020 - TuoiDuong) % 10; //can
+			var j = (2020 - TuoiDuong) % 12; // chi
+			var can = ["Canh", "Tân", "Nhâm", "Quý", "Giáp", "Ất", "Bính", "Đinh", "Mậu", "Kỷ"];
+			var chi = ["Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi"];
+			document.getElementById("TuoiAmLich").innerHTML = can[i] + " " + chi[j];  
+	}
+	</script>
+	<form id="box">
+		<table style="background: #FF99CC;" width="278" border="1" >
+	    	<tr>
+	      		<td colspan="2">Chương trình tra tuổi</td>
+        	</tr>
+	    	<tr>
+	      		<td width="116">Tuổi dương lịch</td>
+	      		<td width="146"><input id="TuoiDuongLich" type="text" name="TuoiDuongLich"  /></td>
+        	</tr>
+	    	<tr>
+	      		<td>Tuổi âm lịch</td>
+	      		<td style="background: #FFFFFF"><div id="TuoiAmLich" type="text" name="TuoiAmLich"></div></td>
+        	</tr>
+	    	<tr>
+	      		<td colspan="2" style="text-align: center;">
+			  		<input type="reset" name="reset" value="Xóa"/>
+			   		<input type="button" name="button" value="Tra Cứu" onClick="myFunction()" />
+		  		</td>
+        	</tr>
+ 
+		</table>
+	</form>
+</body>
+</html>

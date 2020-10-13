@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Nguyễn Xuân Giang">
+<title>Phiếu 3 - Bài 2</title>
+	<style>
+		body{
+			width: 500px;
+			border: 1px solid #1051BF;
+			margin: 3px auto;
+			text-align: center;
+		}
+	</style>
+	<script>
+	function myFunction(){
+		var x = document.getElementById("box").value;
+		var noti;
+		if(x % 1 == 0 && x >= 1 && x <= 10){
+			noti = "Dữ liệu đúng";
+		}
+		else if(x < 1 || x > 10)
+		{
+			noti = "Dữ liệu nằm ngoài khoảng từ 1 đến 10";
+		}
+		else
+		{
+			noti = "Dữ liệu không đúng";
+		}
+		document.getElementById("result").innerHTML = noti;
+	}
+	</script>	
+</head>
+
+<body>
+	<h1>JavaScript có thể kiểm soát form</h1>
+	<p>Hãy nhập vào hộp text (từ 1 đến 10): </p>
+	<p>
+	<input id="box" name="box" value=""/>
+	<input type="button" id="submit" name="submit" value="Submit" onClick="myFunction()"/>
+	</p>
+	<p id="result"></p>
+</body>
+</html>
