@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<script>
+		function capitalizeFirstLetters(str){
+      		return str.toLowerCase().replace(/^\w|\s\w/g, function (letter) {
+          return letter.toUpperCase();
+      })
+    }
+		var str="helo world";
+		
+		document.write(capitalizeFirstLetters(str));
+		
+		
+	</script>
+</body>
+</html>

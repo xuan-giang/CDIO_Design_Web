@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script>
+		function phepCong(){
+			var x = document.getElementById("SoThuNhat").value;
+			var y = document.getElementById("SoThuHai").value;
+			document.getElementById("KetQua").value = x * 1 + y + 1;
+		}
+		function phepTru(){
+			var x = document.getElementById("SoThuNhat").value;
+			var y = document.getElementById("SoThuHai").value;
+			document.getElementById("KetQua").value =  x - y;
+		}
+		function phepNhan(){
+			var x = document.getElementById("SoThuNhat").value;
+			var y = document.getElementById("SoThuHai").value;
+			document.getElementById("KetQua").value =  x * y;
+		}
+		function phepChia(){
+			var x = document.getElementById("SoThuNhat").value;
+			var y = document.getElementById("SoThuHai").value;
+			if(y==0){
+				document.getElementById("KetQua").value =  "y không hợp lệ";
+			}else{
+				document.getElementById("KetQua").value =  x / y;
+			}
+		}
+		function luyThua(){
+			var x = document.getElementById("SoThuNhat").value;
+			var y = document.getElementById("SoThuHai").value;
+			document.getElementById("KetQua").value =  Math.pow(x,y);
+		}
+	</script>
+</head>
+
+<body>
+<form>
+  <p>Số thứ nhất: <input type="text" id="SoThuNhat" /><br></p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" id="cong" value="+" onClick="phepCong();" />
+		<input type="button" id="tru" value="-" onClick="phepTru();" />
+		<input type="button" id="nhan" value="*" onClick="phepNhan();" />
+		<input type="button" id="chia" value="/" onClick="phepChia();" />
+		<input type="button" id="mu" value="^" onClick="luyThua();" />
+		<br>
+  <p>Số thứ hai:&nbsp;&nbsp; <input type="text" id="SoThuHai" /><br></p>
+		<p>Kết quả: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    <input type="text" id="KetQua" /></p>
+	</form>
+</body>
+</html>

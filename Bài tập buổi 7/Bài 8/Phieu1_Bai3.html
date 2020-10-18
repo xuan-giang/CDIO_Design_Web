@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<script>
+		
+		var a = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+
+		function dem(x){
+			var count = 0;
+			for(var i = 0; i < a.length; i++){
+				if(a[i] == x){
+					count++;
+				}
+			}
+			return count;
+		}
+		a.sort();
+		for(var i = 0; i < a.length; i++){
+			if(dem(a[i])>1 && a[i]==a[i+1]){
+				document.write(a[i] +": "+ dem(a[i]) + " times" + "<br>");
+				a.splice(i+1, dem(a[i])-1);
+			}
+		}
+		
+	</script>
+</body>
+</html>

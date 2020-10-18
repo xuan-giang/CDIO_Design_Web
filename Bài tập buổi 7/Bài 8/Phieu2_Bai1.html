@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<script>
+		var color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+		let name = ["th", "st", "nd", "rd"];
+		for(var i = 0; i < color.length; i++){
+			if(i > 2){
+				document.write((i+1) + name[0] +" choice is "+color[i] +"<br>");
+			}else{
+				document.write((i+1) + name[i+1] +" choice is "+color[i]+"<br>");
+			}
+			
+		}
+		
+	</script>
+</body>
+</html>
