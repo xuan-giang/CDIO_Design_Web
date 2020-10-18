@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+</script>
+</head>
+<body>
+<table class="calc">
+<tr><td colspan="5">
+<div id="screen">
+
+<div id="formular"></div>
+<div id="console">0</div>
+
+</div>
+</td></tr>
+<tr class="cline2">
+<td colspan="5">
+<input type="button" onclick = "keypad_process_key(8)" value=" BkSp ">
+<input type="button" onclick="keypad_process_key(27)" value="CE">
+<input type="button" onclick="keypad_process_key(46)" value="C">
+</td></tr>
+<tr class="cline">
+<td><input type="button" value="7" onclick="cdigit(this)"></td>
+<td><input type="button" value="8" onclick="cdigit(this)"></td>
+<td><input type="button" value="9" onclick="cdigit(this)"></td>
+<td><input type="button" value="/"></td>
+<td><input type="button" value="sqrt"></td>
+</tr>
+<tr class="cline">
+<td><input type="button" value="4" onclick="cdigit(this)"></td>
+<td><input type="button" value="5" onclick="cdigit(this)"></td>
+<td><input type="button" value="6" onclick="cdigit(this)"></td>
+<td><input type="button" value="*"></td>
+<td><input type="button" value="%"></td>
+</tr>
+<tr class="cline">
+<td><input type="button" value="1" onclick="cdigit(this)"></td>
+<td><input type="button" value="2" onclick="cdigit(this)"></td>
+<td><input type="button" value="3" onclick="cdigit(this)"></td>
+<td><input type="button" value="-"></td>
+<td><input type="button" value="1/X"></td>
+</tr>
+<tr class="cline">
+<td><input type="button" value="0" onclick="cdigit(this)"></td>
+<td><input type="button" value="+/-" onclick="dosign()" ></td>
+<td><input type="button" value="." onclick="keypad_process_key(190)" ></td>
+<td><input type="button" value="+"></td>
+<td><input type="button" value="="></td>
+</tr>
+</table>
+	<input type="button" value="More Option" />
+</body>
+</html>
