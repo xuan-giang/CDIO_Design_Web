@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function check(){
+            var reg = /@/igm;
+            var reg1 = /^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$/;
+            var t1 = 0;
+            var t2=0;
+            var t3=0;
+            // if(reg1.test(document.getElementById("input").value) == true){
+            //     t1=1;
+            // }
+            // if(reg2.test(document.getElementById("input").value) == true){
+            //     t2=1;
+            // }
+            // if(t1 + t2 == 2){
+            //     alert("Hợp lệ");
+            // }else{
+            //     alert("Không hợp lệ");
+            // }
+            
+                if(document.getElementById("input").value== null || document.getElementById("input").value == ""){
+                    alert("Không được bỏ trống");
+                    
+                }
+            
+            if(reg1.test(document.getElementById("input").value)){
+                alert("Hợp lệ");
+            }else{
+                alert("Không hợp lệ");
+            }
+        }
+    </script>
+</head>
+
+<body>
+  
+<input type="text" id="input">
+<button type="submit" onclick="check();">Tìm kiếm</button>
+
+</body>

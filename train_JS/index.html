@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function check(){
+            var str = document.getElementById("input").value;
+            alert("Test: " + str)
+            document.getElementById("output").innerHTML = str;
+        }
+    </script>
+</head>
+
+<body>
+  
+<input type="text" id="input">
+<button type="submit" onclick="check();">Kiểm tra</button>
+Chữ bạn vừa nhập: <p id="output"></p>
+</body>

@@ -1,0 +1,86 @@
+.info {
+    border: 0px solid;
+    padding-right: 100px;
+    display: inline-block;
+}
+
+head{
+    display: inline-block;
+}
+.menu ul{
+    list-style-type: none;
+    background-color: rgb(124, 124, 124);
+    padding-left: 1px;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.7);
+    z-index: 1;
+    
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li:hover{
+    background: #333;
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 0px solid;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content img{
+    width: 300px;
+    height: 300px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.content img:hover{
+    transform: scale(1.2);
+}
+
+button{
+    background: rgb(18, 138, 72);
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    font-size: large;
+    border: 0px solid green;
+}
+
+button:hover{
+    background: rgb(124, 255, 174);
+    color: black;
+}
+
+.content{
+    border: 0px solid;
+    width: 400px;
+    float: left;
+    padding: 10px;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.menu ul li ul{
+    top: 0px;
+    position: absolute;
+    right: -200px;
+    display: none;
+}
+
+.menu ul li:hover ul{
+    display: block;
+}

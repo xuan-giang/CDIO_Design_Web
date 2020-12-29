@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background: black;
+    text-align: center;
+}
+
+#nav ul li{
+    display: inline-table;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+#nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#nav ul li a:hover{
+    background: rgb(157, 122, 255);
+}
+
+#nav ul li .sub-menu{
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0,0.6);
+    z-index: 1;
+    display: none;
+}
+#nav ul li:hover{
+    background: rgb(99, 97, 97);
+}
+#nav ul li:hover .sub-menu{
+    display: block;
+}
